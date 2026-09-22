@@ -20,6 +20,8 @@ async function bootstrap() {
   origin: [
     'http://localhost:3000',
     'http://localhost:3001',
+
+    'https://software-engineer-portfolio-8gjf.vercel.app',
   ],
   credentials: true,
 });
