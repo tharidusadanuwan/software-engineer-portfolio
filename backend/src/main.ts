@@ -24,6 +24,9 @@ async function bootstrap() {
     "https://software-engineer-portfolio-8gjf.vercel.app",
     "https://software-engineer-portfolio-1gxom9jnq-tharidys-projects.vercel.app",
     "https://software-engineer-portfolio-wheat.vercel.app",
+
+    // Public Portfolio
+      'https://portfolio-frontend-brown-two.vercel.app',
   ],
   credentials: true,
 });
