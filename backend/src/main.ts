@@ -21,7 +21,9 @@ async function bootstrap() {
     'http://localhost:3000',
     'http://localhost:3001',
 
-    'https://software-engineer-portfolio-8gjf.vercel.app',
+    "https://software-engineer-portfolio-8gjf.vercel.app",
+    "https://software-engineer-portfolio-1gxom9jnq-tharidys-projects.vercel.app",
+    "https://software-engineer-portfolio-wheat.vercel.app",
   ],
   credentials: true,
 });
