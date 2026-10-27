@@ -1,3 +1,4 @@
+
 "use client";
 
 import {
@@ -10,22 +11,12 @@ import {
   UsersRound,
 } from "lucide-react";
 
-import {
-  FaGithub,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer
-      id="contact"
-      className="w-full"
-    >
-
-      {/* =========================================================
-          FILE 3 - DETAILS / ACHIEVEMENT STRIP
-      ========================================================= */}
-
+    <footer id="contact" className="w-full">
+      {/* DETAILS / ACHIEVEMENT STRIP */}
       <section
         className="
           w-full
@@ -53,11 +44,7 @@ export default function Footer() {
             lg:grid-cols-4
           "
         >
-
-          {/* =====================================================
-              ITEM 1 - EDUCATION
-          ===================================================== */}
-
+          {/* ITEM 1 - EDUCATION */}
           <div
             className="
               flex
@@ -98,23 +85,13 @@ export default function Footer() {
                 BEng (Hons)
               </h3>
 
-              <p
-                className="
-                  text-[10px]
-                  leading-4
-                  text-slate-500
-                  sm:text-[11px]
-                "
-              >
+              <p className="text-[10px] leading-4 text-slate-500 sm:text-[11px]">
                 Computer Software Engineering
               </p>
             </div>
           </div>
 
-          {/* =====================================================
-              ITEM 2 - PROJECTS
-          ===================================================== */}
-
+          {/* ITEM 2 - PROJECTS */}
           <div
             className="
               flex
@@ -143,35 +120,17 @@ export default function Footer() {
             </div>
 
             <div>
-              <h3
-                className="
-                  text-sm
-                  font-bold
-                  leading-5
-                  text-slate-900
-                  sm:text-[15px]
-                "
-              >
+              <h3 className="text-sm font-bold leading-5 text-slate-900 sm:text-[15px]">
                 15+
               </h3>
 
-              <p
-                className="
-                  text-[10px]
-                  leading-4
-                  text-slate-500
-                  sm:text-[11px]
-                "
-              >
+              <p className="text-[10px] leading-4 text-slate-500 sm:text-[11px]">
                 Projects Completed
               </p>
             </div>
           </div>
 
-          {/* =====================================================
-              ITEM 3 - PROBLEM SOLVER
-          ===================================================== */}
-
+          {/* ITEM 3 - PROBLEM SOLVER */}
           <div
             className="
               flex
@@ -200,35 +159,17 @@ export default function Footer() {
             </div>
 
             <div>
-              <h3
-                className="
-                  text-sm
-                  font-bold
-                  leading-5
-                  text-slate-900
-                  sm:text-[15px]
-                "
-              >
+              <h3 className="text-sm font-bold leading-5 text-slate-900 sm:text-[15px]">
                 Problem Solver
               </h3>
 
-              <p
-                className="
-                  text-[10px]
-                  leading-4
-                  text-slate-500
-                  sm:text-[11px]
-                "
-              >
+              <p className="text-[10px] leading-4 text-slate-500 sm:text-[11px]">
                 Always eager to learn
               </p>
             </div>
           </div>
 
-          {/* =====================================================
-              ITEM 4 - PASSIONATE
-          ===================================================== */}
-
+          {/* ITEM 4 - PASSIONATE */}
           <div
             className="
               flex
@@ -257,53 +198,31 @@ export default function Footer() {
             </div>
 
             <div>
-              <h3
-                className="
-                  text-sm
-                  font-bold
-                  leading-5
-                  text-slate-900
-                  sm:text-[15px]
-                "
-              >
+              <h3 className="text-sm font-bold leading-5 text-slate-900 sm:text-[15px]">
                 Passionate
               </h3>
 
-              <p
-                className="
-                  text-[10px]
-                  leading-4
-                  text-slate-500
-                  sm:text-[11px]
-                "
-              >
+              <p className="text-[10px] leading-4 text-slate-500 sm:text-[11px]">
                 About creating impact
               </p>
             </div>
           </div>
-
         </div>
       </section>
 
-      {/* =========================================================
-          MAIN FOOTER - MOUNTAIN BACKGROUND
-      ========================================================= */}
-
+      {/* MAIN FOOTER - MOUNTAIN BACKGROUND */}
       <section
         className="
           relative
-          min-h-[285px]
+          min-h-[400px]
           w-full
           overflow-hidden
           bg-[#07101c]
           text-white
+          md:min-h-[285px]
         "
       >
-
-        {/* =======================================================
-            ACTUAL MOUNTAIN IMAGE
-        ======================================================= */}
-
+        {/* MOUNTAIN IMAGE */}
         <div
           className="
             absolute
@@ -313,23 +232,14 @@ export default function Footer() {
             bg-no-repeat
           "
           style={{
-            backgroundImage:
-              "url('/assets/mountain.jpg')",
+            backgroundImage: "url('/assets/mountain.jpg')",
           }}
         />
 
-        {/* Dark overlay */}
+        {/* DARK OVERLAY */}
+        <div className="absolute inset-0 bg-[#06101c]/65" />
 
-        <div
-          className="
-            absolute
-            inset-0
-            bg-[#06101c]/65
-          "
-        />
-
-        {/* Additional bottom darkness */}
-
+        {/* BOTTOM DARKNESS */}
         <div
           className="
             absolute
@@ -341,30 +251,31 @@ export default function Footer() {
           "
         />
 
-        {/* =======================================================
-            FOOTER CONTENT
-        ======================================================= */}
-
+        {/* FOOTER CONTENT */}
         <div
           className="
             relative
             z-10
             mx-auto
-            min-h-[285px]
+            flex
+            min-h-[400px]
             w-full
             max-w-[1500px]
-            px-6
+            flex-col
+            items-center
+            gap-5
+            px-4
             py-8
             sm:px-10
+            md:block
+            md:min-h-[285px]
+            md:px-10
+            md:py-8
             lg:px-14
             xl:px-16
           "
         >
-
-          {/* =====================================================
-              LEFT HANDWRITTEN TEXT
-          ===================================================== */}
-
+          {/* LEFT HANDWRITTEN TEXT */}
           <div
             className="
               absolute
@@ -397,8 +308,6 @@ export default function Footer() {
               Tomorrow
             </p>
 
-            {/* Handwritten arrow */}
-
             <svg
               width="58"
               height="50"
@@ -422,25 +331,22 @@ export default function Footer() {
             </svg>
           </div>
 
-          {/* =====================================================
-              CENTER CONTENT
-          ===================================================== */}
-
+          {/* CENTER CONTENT */}
           <div
             className="
+              relative
               mx-auto
               flex
-              min-h-[235px]
+              w-full
               max-w-[650px]
               flex-col
               items-center
               justify-center
               text-center
+              md:min-h-[235px]
             "
           >
-
-            {/* Small heading */}
-
+            {/* SMALL HEADING */}
             <p
               className="
                 text-[9px]
@@ -454,8 +360,7 @@ export default function Footer() {
               LET&apos;S CONNECT
             </p>
 
-            {/* Main heading */}
-
+            {/* MAIN HEADING */}
             <h2
               className="
                 mt-1.5
@@ -470,8 +375,7 @@ export default function Footer() {
               Have a Project in Mind?
             </h2>
 
-            {/* Description */}
-
+            {/* DESCRIPTION */}
             <p
               className="
                 mx-auto
@@ -490,190 +394,188 @@ export default function Footer() {
               build something amazing together!
             </p>
 
-            {/* =================================================
-                GET IN TOUCH BUTTON
-            ================================================= */}
-
+            {/* GET IN TOUCH BUTTON */}
             <a
-  href="/contact"
-  className="
-    group
-    mt-5
-    inline-flex
-    items-center
-    gap-2
-    rounded-full
-    bg-blue-600
-    px-6
-    py-2.5
-    text-xs
-    font-semibold
-    text-white
-    shadow-lg
-    shadow-blue-600/20
-    transition-all
-    duration-300
-    hover:bg-blue-500
-    hover:shadow-blue-500/30
-    sm:px-7
-    sm:py-3
-    sm:text-sm
-  "
->
-  <Mail className="h-4 w-4" />
+              href="/contact"
+              className="
+                group
+                mt-5
+                inline-flex
+                shrink-0
+                items-center
+                gap-2
+                rounded-full
+                bg-blue-600
+                px-6
+                py-2.5
+                text-xs
+                font-semibold
+                text-white
+                shadow-lg
+                shadow-blue-600/20
+                transition-all
+                duration-300
+                hover:bg-blue-500
+                hover:shadow-blue-500/30
+                sm:px-7
+                sm:py-3
+                sm:text-sm
+              "
+            >
+              <Mail className="h-4 w-4" />
 
-  Get In Touch
+              Get In Touch
 
-  <ArrowRight
-    className="
-      h-3.5
-      w-3.5
-      transition-transform
-      duration-300
-      group-hover:translate-x-1
-    "
-  />
-</a>
+              <ArrowRight
+                className="
+                  h-3.5
+                  w-3.5
+                  transition-transform
+                  duration-300
+                  group-hover:translate-x-1
+                "
+              />
+            </a>
           </div>
 
-          {/* =====================================================
-              RIGHT SOCIAL AREA
-          ===================================================== */}
-
+          {/* RIGHT SOCIAL AREA */}
           <div
             className="
-              absolute
-              bottom-7
-              right-6
+              relative
+              z-10
               flex
+              w-full
+              shrink-0
               flex-col
               items-center
-              sm:right-10
-              md:bottom-auto
+              justify-center
+              gap-0
+              md:absolute
+              md:right-10
               md:top-1/2
+              md:w-auto
               md:-translate-y-1/2
               lg:right-14
               xl:right-16
             "
           >
+            {/* SOCIAL ICONS */}
+            <div className="flex items-center justify-center gap-3">
+              {/* GITHUB */}
+              <a
+                href="https://github.com/tharidusadanuwan"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+                className="
+                  flex
+                  h-10
+                  w-10
+                  shrink-0
+                  items-center
+                  justify-center
+                  rounded-full
+                  border
+                  border-white/10
+                  bg-white/5
+                  text-slate-200
+                  transition-all
+                  duration-300
+                  hover:-translate-y-1
+                  hover:border-blue-400/40
+                  hover:bg-blue-500/10
+                  hover:text-blue-400
+                "
+              >
+                <FaGithub className="h-[17px] w-[17px]" />
+              </a>
 
-            {/* Social icons */}
+              {/* LINKEDIN */}
+              <a
+                href="https://www.linkedin.com/in/tharidu-sadanuwan-78b5a9299/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+                className="
+                  flex
+                  h-10
+                  w-10
+                  shrink-0
+                  items-center
+                  justify-center
+                  rounded-full
+                  border
+                  border-white/10
+                  bg-white/5
+                  text-slate-200
+                  transition-all
+                  duration-300
+                  hover:-translate-y-1
+                  hover:border-blue-400/40
+                  hover:bg-blue-500/10
+                  hover:text-blue-400
+                "
+              >
+                <FaLinkedin className="h-[17px] w-[17px]" />
+              </a>
 
-<div className="flex items-center gap-3">
+              {/* EMAIL */}
+              <a
+                href="mailto:tharidusadanuwan100@gmail.com"
+                aria-label="Email"
+                className="
+                  flex
+                  h-10
+                  w-10
+                  shrink-0
+                  items-center
+                  justify-center
+                  rounded-full
+                  border
+                  border-white/10
+                  bg-white/5
+                  text-slate-200
+                  transition-all
+                  duration-300
+                  hover:-translate-y-1
+                  hover:border-blue-400/40
+                  hover:bg-blue-500/10
+                  hover:text-blue-400
+                "
+              >
+                <Mail className="h-[17px] w-[17px]" />
+              </a>
 
-  {/* GitHub */}
-  <a
-    href="https://github.com/tharidusadanuwan"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="GitHub"
-    className="
-      flex
-      h-10
-      w-10
-      items-center
-      justify-center
-      rounded-full
-      border
-      border-white/10
-      bg-white/5
-      text-slate-200
-      transition-all
-      duration-300
-      hover:-translate-y-1
-      hover:border-blue-400/40
-      hover:bg-blue-500/10
-      hover:text-blue-400
-    "
-  >
-    <FaGithub className="h-[17px] w-[17px]" />
-  </a>
+              {/* DOWNLOAD CV */}
+              <a
+                href="/assets/Tharidu_Cv_SE.pdf"
+                download="Tharidu_Sasaruwan_CV.pdf"
+                aria-label="Download CV"
+                className="
+                  flex
+                  h-10
+                  w-10
+                  shrink-0
+                  items-center
+                  justify-center
+                  rounded-full
+                  border
+                  border-white/10
+                  bg-white/5
+                  text-slate-200
+                  transition-all
+                  duration-300
+                  hover:-translate-y-1
+                  hover:border-blue-400/40
+                  hover:bg-blue-500/10
+                  hover:text-blue-400
+                "
+              >
+                <Download className="h-4 w-4" />
+              </a>
+            </div>
 
-  {/* LinkedIn */}
-  <a
-    href="https://www.linkedin.com/in/tharidu-sadanuwan-78b5a9299/"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="LinkedIn"
-    className="
-      flex
-      h-10
-      w-10
-      items-center
-      justify-center
-      rounded-full
-      border
-      border-white/10
-      bg-white/5
-      text-slate-200
-      transition-all
-      duration-300
-      hover:-translate-y-1
-      hover:border-blue-400/40
-      hover:bg-blue-500/10
-      hover:text-blue-400
-    "
-  >
-    <FaLinkedin className="h-[17px] w-[17px]" />
-  </a>
-
-  {/* Email */}
-  <a
-    href="mailto:tharidusadanuwan100@gmail.com"
-    aria-label="Email"
-    className="
-      flex
-      h-10
-      w-10
-      items-center
-      justify-center
-      rounded-full
-      border
-      border-white/10
-      bg-white/5
-      text-slate-200
-      transition-all
-      duration-300
-      hover:-translate-y-1
-      hover:border-blue-400/40
-      hover:bg-blue-500/10
-      hover:text-blue-400
-    "
-  >
-    <Mail className="h-[17px] w-[17px]" />
-  </a>
-
-  {/* Download CV */}
-  <a
-    href="/assets/Tharidu_Cv_SE.pdf"
-    download="Tharidu_Sasaruwan_CV.pdf"
-    aria-label="Download CV"
-    className="
-      flex
-      h-10
-      w-10
-      items-center
-      justify-center
-      rounded-full
-      border
-      border-white/10
-      bg-white/5
-      text-slate-200
-      transition-all
-      duration-300
-      hover:-translate-y-1
-      hover:border-blue-400/40
-      hover:bg-blue-500/10
-      hover:text-blue-400
-    "
-  >
-    <Download className="h-[16px] w-[16px]" />
-  </a>
-
-</div>
-
-            {/* Availability */}
-
+            {/* AVAILABILITY */}
             <p
               className="
                 mt-2.5
